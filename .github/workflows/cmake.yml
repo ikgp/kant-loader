@@ -34,7 +34,7 @@ jobs:
 
     - name: Add Windows dependencies
       if: runner.os == 'Windows'
-      run: windeployqt build/Release/kant-loader.exe -no-network -no-positioning -no-printsupport -no-qml -no-qmltooling -no-quick -no-quickwidgets -no-serialport -no-svg -no-webchannel
+      run: windeployqt build/Release/kant-loader.exe
 
     - name: Upload the Windows build
       uses: actions/upload-artifact@v3
